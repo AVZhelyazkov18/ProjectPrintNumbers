@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Numbers</title>
-</head>
 <body>
-<h1>Numbers</h1>
-<ul>
-    <li th:each="number : ${numbers}">
-        <span th:text="${number}"></span>
-    </li>
-</ul>
+    <div th:each="number : ${numbers}">
+        <p th:text="${number}"></p>
+    </div>
 </body>
 </html>
